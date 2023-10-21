@@ -1,104 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-      <link rel="stylesheet" href="index.css">
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>CSS Realastice Click Event</title> 
-    </head>
-    <body>
+<html>
 
-        <div class="container">
-            <div class="head"><h1>Post a Comment</h1></div>
-            <div><span id="comment">0</span> Comments</div>
-            <div class="text"><p>We are happy to hear from you</p></div>
-            <div class="comments"></div>
-            <div class="commentbox">
-                <img src="data:image/jpeg;base64,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" alt="">
-                <div class="content">
-                    <h2>Comment as: </h2>
-                    <input type="text" value="Anonymous" class="user">
+<head>
+  <title>Registration Page</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+</head>
 
-                    <div class="commentinput">
-                        <input type="text" placeholder="Enter comment" class="usercomment">
-                        <div class="buttons">
-                            <button type="submit" disabled id="publish">Publish</button>
-                            <div class="notify">
-                                <input type="checkbox" class="notifyinput"> <span>Notify me</span>
-                            </div>
-                        </div>
-                    </div>
-                    <p>This site is protected by reCAPTCHA and the Google <a href="">privacy policy</a> and <a href="">Terms of Service</a>apply.</p>
-                </div>
-            </div>
+<body>
+  <div class="container">
+    <div class="row col-md-6 col-md-offset-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h1>Registration Form</h1>
         </div>
-    
+        <div class="panel-body">
+          <form action="connect.php" method="post">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" />
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <div>
+                <label for="male" class="radio-inline"><input type="radio" name="gender" value="m"
+                    id="male" />Male</label>
+                <label for="female" class="radio-inline"><input type="radio" name="gender" value="f"
+                    id="female" />Female</label>
+                <label for="others" class="radio-inline"><input type="radio" name="gender" value="o"
+                    id="others" />Others</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password" />
+            </div>
+            <div class="form-group">
+              <label for="number">Phone Number</label>
+              <input type="number" class="form-control" id="number" name="number" />
+            </div>
+            <input type="submit" class="btn btn-primary" />
+          </form>
+        </div>
+        <div class="panel-footer text-right">
+          <small>&copy; Technical Babaji</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded mr-2" alt="...">
+      <strong class="mr-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</body>
 
-
-        <script>
-            "use strict";
-
-            const userId = {
-                name: null,
-                identity: null,
-                image: null,
-                message: null,
-                date: null,
-            }
-
-            const userComment = document.querySelector(".usercomment");
-            const publishBtn = document.querySelector("#publish");
-            const comments = document.querySelector(".comments");
-            const userName = document.querySelector(".user");
-
-            userComment.addEventListener("input", e => {
-                if(!userComment.value) {
-                    publishBtn.setAttribute("disabled", "disabled");
-                    publishBtn.classList.remove("abled")
-                }else {
-                    publishBtn.removeAttribute("disabled");
-                    publishBtn.classList.add("abled")
-                }
-            })
-
-
-
-
-            function addPost(){
-                console.log("The button works!")
-                if(!userComment.value) retuen;
-                userId.name = userName.value;
-                if(userId.name === "Anonymous") {
-                    userId.identity = false;
-                    userId.image = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1200px-Icon-round-Question_mark.svg.png";
-                }else {
-                    userId.identity = true;
-                    userId.image = "https://static-00.iconduck.com/assets.00/user-icon-2048x2048-ihoxz4vq.png"
-                }
-
-                userId.message = userComment.value;
-                userId.date = new Date().toLocaleString();
-                let published =
-                 `<div class="parents">
-                    <img src="${userId.image}">
-                    <div>
-                        <h1>${userId.name}</h1>
-                        <p>${userId.message}</p>
-                        <div class="engagements"><img src="https://cdn-icons-png.flaticon.com/512/1175/1175578.png"><img src="data:image/png;base64,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"></div>
-                        <span class="date">${userId.date}</span>
-                    </div>
-                </div> `;
-
-                comments.innerHTML += published;
-                userComment.value ="";
-
-                let commentsNum = document.querySelectorAll("parents").length;
-                document.getElementById("comment").textContent = commentsNum;
-            }
-
-            publishBtn.addEventListener("click", addPost)
-        </script>
-
-
-    </body>
 </html>
