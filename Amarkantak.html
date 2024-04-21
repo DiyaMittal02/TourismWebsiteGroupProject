@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="placepage.css">
+    <link rel="stylesheet" href="q.css">
     <title>About Amarkantak</title>
 </head>
 
@@ -20,16 +21,23 @@
     </header>
 
     <section class="gallery">
-        <div class="image">
-            <img src="https://www.mptourism.com/images/point-of-interest/Shri%20Yantra%20Temple.jpg" alt="Picture 1">
-        </div>
-        <div class="image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzi0BJ_yKKpWX60MBomLCgDB_xIgTdsqnaKQ&usqp=CAU"
-                alt="Picture 2">
-        </div>
-        <div class="image">
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/ae/6f/26/img-20180714-152908-largejpg.jpg?w=500&h=-1&s=1"
-                alt="Picture 3">
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+                <img src="https://www.mptourism.com/images/point-of-interest/Shri%20Yantra%20Temple.jpg" width="500"
+                    height="300" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzi0BJ_yKKpWX60MBomLCgDB_xIgTdsqnaKQ&usqp=CAU"
+                    class="slide" width="500" height="300" />
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/ae/6f/26/img-20180714-152908-largejpg.jpg?w=500&h=-1&s=1"
+                    class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
         </div>
     </section>
 
@@ -53,6 +61,14 @@
             offers a unique and enriching experience for all who visit.
             <br><br>
         </p>
+    </section>
+    <section class="weather">
+        <h3>Weather Forecast</h3>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/22d6881d75/amarkantak/" data-label_1="AMARKANTAK"
+            data-label_2="WEATHER" data-theme="original">AMARKANTAK WEATHER</a>
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
     </section>
 
     <section class="Thingstodo">

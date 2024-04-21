@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="placepage.css">
+    <link rel="stylesheet" href="q.css">
     <title>About Kolad</title>
 </head>
 
@@ -20,15 +21,23 @@
     </header>
 
     <section class="gallery">
-        <div class="image">
-            <img src="https://www.petravalparai.com/img/tourist-places/athirappily-falls.jpg" alt="Picture 1">
-        </div>
-        <div class="image">
-            <img src="https://www.petravalparai.com/img/tourist-places/sholayar-dam.jpg" alt="Picture 2">
-        </div>
-        <div class="image">
-            <img src="https://www.onmanorama.com/content/dam/mm/en/travel/getting-about-kerala/thrissur/images/2017/6/19/valparai-getty.jpg.transform/845x440/image.jpg"
-                alt="Picture 3">
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+                <img src="https://www.petravalparai.com/img/tourist-places/athirappily-falls.jpg" width="500"
+                    height="300" />
+                <img src="https://www.petravalparai.com/img/tourist-places/sholayar-dam.jpg" class="slide" width="500"
+                    height="300" />
+                <img src="https://www.onmanorama.com/content/dam/mm/en/travel/getting-about-kerala/thrissur/images/2017/6/19/valparai-getty.jpg.transform/845x440/image.jpg"
+                    class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
         </div>
     </section>
 
@@ -55,6 +64,14 @@
             stands as an inviting destination for those seeking a refreshing escape from the rigors of urban life.
             <br><br>
         </p>
+    </section>
+    <section class="weather">
+        <h3>Weather Forecast</h3>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/18d4173d21/kolad/" data-label_1="KOLAD"
+            data-label_2="WEATHER" data-theme="original">KOLAD WEATHER</a>
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
     </section>
 
     <section class="Thingstodo">

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="placepage.css">
+    <link rel="stylesheet" href="q.css">
     <title>Loktak Lake</title>
 </head>
 
@@ -20,16 +21,23 @@
     </header>
 
     <section class="gallery">
-        <div class="image">
-            <img src="https://www.outlookindia.com/traveller/wp-content/uploads/2017/08/Manipur1_FI-640x360.jpg"
-                alt="Picture 1">
-        </div>
-        <div class="image">
-            <img src="https://en-media.thebetterindia.com/uploads/2016/02/loktak_f.jpg" alt="Picture 2">
-        </div>
-        <div class="image">
-            <img src="https://www.cheekypassports.com/wp-content/uploads/2019/07/Views-of-the-loktak-lake-in-manipur.jpg"
-                alt="Picture 3">
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+                <img src="https://www.outlookindia.com/traveller/wp-content/uploads/2017/08/Manipur1_FI-640x360.jpg"
+                    width="500" height="300" />
+                <img src="https://en-media.thebetterindia.com/uploads/2016/02/loktak_f.jpg" class="slide" width="500"
+                    height="300" />
+                <img src="https://www.cheekypassports.com/wp-content/uploads/2019/07/Views-of-the-loktak-lake-in-manipur.jpg"
+                    class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
         </div>
     </section>
 
@@ -55,6 +63,14 @@
             with cultural heritage.
             <br><br>
         </p>
+    </section>
+    <section class="weather">
+        <h3>Weather Forecast</h3>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/24d6693d91/manipur/" data-label_1="Loktak"
+            data-label_2="WEATHER" data-theme="original">Loktak WEATHER</a>
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
     </section>
 
     <section class="Thingstodo">

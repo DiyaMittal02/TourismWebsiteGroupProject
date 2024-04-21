@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="placepage.css">
+    <link rel="stylesheet" href="q.css">
     <title>About Mahendragiri</title>
 </head>
 
@@ -20,17 +21,23 @@
     </header>
 
     <section class="gallery">
-        <div class="image">
-            <img src="https://1.bp.blogspot.com/-nK8WB7KSVuM/XpAnKjlLoaI/AAAAAAABhmA/Ty5duPhcG_gVUHbVE5fuY4it4z8eCv7vACLcBGAsYHQ/s1600/2017-08-14.jpg"
-                alt="Picture 1">
-        </div>
-        <div class="image">
-            <img src="https://tourmyodisha.com/wp-content/uploads/2021/07/218600757_1141715956336866_1733186514839631952_n-600x405.jpg"
-                alt="Picture 2">
-        </div>
-        <div class="image">
-            <img src="https://1.bp.blogspot.com/-2gefwkIobn8/YMSud_2iP5I/AAAAAAAAB2Y/52kUQoUeH5MhGuIf3LxjP1hbpYtjulhDQCLcBGAsYHQ/s960/AE549AB0-70BB-420B-8314-AD94A69C9D12.jpeg"
-                alt="Picture 3">
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+                <img src="https://1.bp.blogspot.com/-nK8WB7KSVuM/XpAnKjlLoaI/AAAAAAABhmA/Ty5duPhcG_gVUHbVE5fuY4it4z8eCv7vACLcBGAsYHQ/s1600/2017-08-14.jpg"
+                    width="500" height="300" />
+                <img src="https://tourmyodisha.com/wp-content/uploads/2021/07/218600757_1141715956336866_1733186514839631952_n-600x405.jpg"
+                    class="slide" width="500" height="300" />
+                <img src="https://1.bp.blogspot.com/-2gefwkIobn8/YMSud_2iP5I/AAAAAAAAB2Y/52kUQoUeH5MhGuIf3LxjP1hbpYtjulhDQCLcBGAsYHQ/s960/AE549AB0-70BB-420B-8314-AD94A69C9D12.jpeg"
+                    class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
         </div>
     </section>
 
@@ -54,6 +61,14 @@
             sanctity, is a destination that captivates the heart and soul of all who venture here.
             <br><br>
         </p>
+    </section>
+    <section class="weather">
+        <h3>Weather Forecast</h3>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/20d9585d10/odisha/" data-label_1="Mahendragiri"
+            data-label_2="WEATHER" data-theme="original">Mahendragiri WEATHER</a>
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
     </section>
 
     <section class="Thingstodo">

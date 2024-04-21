@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="placepage.css">
+    <link rel="stylesheet" href="q.css">
     <title>About Dharchula</title>
 </head>
 
@@ -20,16 +21,23 @@
     </header>
 
     <section class="gallery">
-        <div class="image">
-            <img src="https://allseasonsz.com/Imageswebp/DestinationPage/dharchula_weather.webp" alt="Picture 1">
-        </div>
-        <div class="image">
-            <img src="https://im.indiatimes.in/content/2020/May/dharchula-banner6-1_5eb3e99aacb27.jpg?w=1100&h=535&cc=1"
-                alt="Picture 2">
-        </div>
-        <div class="image">
-            <img src="https://images.herzindagi.info/image/2022/Jan/best-places-to-visit-in-dharchula-inside_3.jpg"
-                alt="Picture 3">
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+                <img src="https://allseasonsz.com/Imageswebp/DestinationPage/dharchula_weather.webp" width="500"
+                    height="300" />
+                <img src="https://im.indiatimes.in/content/2020/May/dharchula-banner6-1_5eb3e99aacb27.jpg?w=1100&h=535&cc=1"
+                    class="slide" width="500" height="300" />
+                <img src="https://images.herzindagi.info/image/2022/Jan/best-places-to-visit-in-dharchula-inside_3.jpg"
+                    class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
         </div>
     </section>
 
@@ -51,6 +59,14 @@
             shopping experience. Whether you're crossing borders for pilgrimage, embarking on a high-altitude trek, or
             simply seeking respite in the mountains, Dharchula promises an unforgettable Himalayan sojourn.
         </p>
+    </section>
+    <section class="weather">
+        <h3>Weather Forecast</h3>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/29d8580d54/dharchula/" data-label_1="DHARCHULA"
+            data-label_2="WEATHER" data-theme="original">DHARCHULA WEATHER</a>
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
     </section>
 
     <section class="Thingstodo">

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="placepage.css">
+    <link rel="stylesheet" href="q.css">
     <title>About Dharchula</title>
 </head>
 
@@ -20,16 +21,23 @@
     </header>
 
     <section class="gallery">
-        <div class="image">
-            <img src="https://imgmediagumlet.lbb.in/media/2019/06/5d120c7b85bc096eeb4302a1_1561463931865.jpg?fm=webp&w=750&h=500&dpr=2"
-                alt="Picture 1">
-        </div>
-        <div class="image">
-            <img src="https://myfifteenplaces.com/images/MobileImages/POIS/21256/Mallaramforest.jpg" alt="Picture 2">
-        </div>
-        <div class="image">
-            <img src="https://www.thetoptours.com/wp-content/uploads/How-to-Reach-the-Mallaram-Forest.jpg"
-                alt="Picture 3">
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+                <img src="https://imgmediagumlet.lbb.in/media/2019/06/5d120c7b85bc096eeb4302a1_1561463931865.jpg?fm=webp&w=750&h=500&dpr=2"
+                    width="500" height="300" />
+                <img src="https://myfifteenplaces.com/images/MobileImages/POIS/21256/Mallaramforest.jpg" class="slide"
+                    width="500" height="300" />
+                <img src="https://www.thetoptours.com/wp-content/uploads/How-to-Reach-the-Mallaram-Forest.jpg"
+                    class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
         </div>
     </section>
 
@@ -53,6 +61,14 @@
             preserving and conserving this invaluable ecosystem for future generations, ensuring that Mallaram Forest
             remains a bastion of biodiversity and a sanctuary for those seeking solace in the embrace of nature..
         </p>
+    </section>
+    <section class="weather">
+        <h3>Weather Forecast</h3>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/18d0379d28/mallaram/" data-label_1="MALLARAM"
+            data-label_2="WEATHER" data-theme="original">MALLARAM WEATHER</a>
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
     </section>
 
     <section class="Thingstodo">
